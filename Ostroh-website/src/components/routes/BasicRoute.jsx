@@ -4,7 +4,7 @@ import Layout from '../layout/Layout';
 import HomePage from '../pages/home/HomePage';
 import ErrorPage from '../errorPages/ErrorPage';
 import NotFoundPage from '../NotFoundPage';
-import CityMap from '../../CityMap';
+import CityMap from '../pages/home/maps/CityMap';
 
 const BasicRoute = memo(() => {
   return (
@@ -12,7 +12,7 @@ const BasicRoute = memo(() => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/CityMap" element={<CityMap />} />
+          <Route path="/cityMap" element={<CityMap />} />
           <Route path="/error" element={<ErrorPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

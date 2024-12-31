@@ -1,0 +1,143 @@
+/* layout.css */
+
+/* Загальні стилі для контейнера */
+.wrapper {
+    display: flex;
+    flex-direction: column; /* Розташування елементів по вертикалі */
+    min-height: 100vh; /* Мінімальна висота екрану */
+  }
+  
+  .containerLayout {
+    flex-grow: 1; /* Заповнює вільний простір між хедером і футером */
+    padding: 2rem;
+  }
+  
+  /* Стилі для Header */
+  header {
+    background-color: #ff004ca9; /* Основний фон для хедера */
+    width: 100%; /* Забезпечує, що хедер займає всю ширину */
+    position: relative;
+  }
+  
+  header .container {
+    max-width: 100%; /* Відмінити обмеження на ширину контейнера */
+    padding: 1rem; /* Додано padding для внутрішніх відступів */
+  }
+  
+  header .nav-item {
+    margin-left: 1rem;
+  }
+  
+  header .nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  header .nav-link:hover {
+    color: #ffc107;
+  }
+  
+  /* Стилі для Footer */
+  footer {
+    background-color: #343a40; /* Темний фон для футера */
+    color: #f8f9fa; /* Світлий текст */
+    width: 100%; /* Забезпечує, що футер займає всю ширину */
+    position: relative;
+  }
+  
+  footer .container {
+    max-width: 100%; /* Відмінити обмеження на ширину контейнера */
+    padding:  1rem; /* Додано padding для внутрішніх відступів */
+  }
+  
+  footer .text-center p {
+    font-size: 0.9rem;
+  }
+  
+  footer .row {
+    margin-top: 2rem;
+  }
+  
+  footer .col-md-4, footer .col-md-2 {
+    padding: 1rem;
+  }
+  
+  footer .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ffc107;
+  }
+  
+  footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer .list-unstyled li {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer .form-control {
+    width: auto;
+    max-width: 300px;
+  }
+  
+  footer .btn {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  footer .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  footer .text-light {
+    color: #f8f9fa !important;
+  }
+  
+  footer .text-light:hover {
+    color: #ffc107 !important;
+  }
+  
+  /* Адаптивні стилі */
+  @media (max-width: 992px) {
+    footer .row {
+      flex-direction: column;
+    }
+  
+    footer .col-md-4, footer .col-md-2 {
+      width: 100%;
+    }
+  
+    header .nav-item {
+      margin-left: 0;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    header h1 {
+      font-size: 1.5rem; /* Зменшення шрифту на малих екранах */
+    }
+  
+    .containerLayout {
+      padding: 1rem;
+    }
+  
+    footer .social-icons a {
+      font-size: 1.2rem;
+    }
+  
+    footer .form-control {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    footer .btn {
+      width: 100%;
+    }
+  }
